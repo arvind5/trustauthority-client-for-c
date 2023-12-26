@@ -9,4 +9,4 @@ add_library(${PROJECT_NAME}
     tdx_adapter.c
 )
 
-target_link_libraries(${PROJECT_NAME} PUBLIC tdx_attest -lssl -lcrypto)
+#target_link_libraries(${PROJECT_NAME} PUBLIC tdx_attest -lssl -lcrypto)

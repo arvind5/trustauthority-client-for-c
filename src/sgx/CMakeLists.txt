@@ -10,4 +10,3 @@ include_directories(
 add_library(${PROJECT_NAME}
     sgx_adapter.c
 )
-

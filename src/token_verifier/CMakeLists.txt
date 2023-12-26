@@ -11,3 +11,5 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ../log
     ../connector
 )
+
+target_link_libraries(${PROJECT_NAME} PUBLIC jwt)
