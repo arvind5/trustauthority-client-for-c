@@ -10,3 +10,5 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ../../include
     ../log
 )
+
+target_link_libraries(${PROJECT_NAME} PUBLIC curl)
