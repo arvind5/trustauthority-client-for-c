@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /trustauthority-client/
 COPY . .
 WORKDIR /trustauthority-client/build 
-RUN cmake -DCMAKE_BUILD_TYPE=$ENABLE_DEBUG -DBUILD_TDX_EXAMPLE=ON ../ \
+RUN cmake -DBUILD_EXAMPLES=ON -DBUILD_TDX=ON -DCMAKE_BUILD_TYPE=$ENABLE_DEBUG .. \
     && cmake --build . --target tdx_token
 
 FROM ubuntu:20.04 as tdx_token_cont
